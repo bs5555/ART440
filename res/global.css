@@ -48,4 +48,20 @@ table {
 }
 /*Global styles begin*/
 body{font-family: 'Lato', sans-serif;}
+div.rtf{max-width:75ch; margin:40px auto; }
+div.rtf p {font-size:1em;   line-height:1.8em; font-weight:400; margin:0 0 1.4em 0; /*text-indent:3em;*/}
+div.rtf h1{font-size: 3em; font-style: normal; font-weight:300; line-height: 1.4em; margin:0 0 2.4em 0; text-align: center; text-transform:uppercase;}
+div.rtf h2{font-size:1.8em; line-height:1.8em; font-weight:300;  margin:0 0 2.4em 0; text-align: center; text-transform:uppercase;}
+
+div.rtf h3{font-size:1.5em; line-height:1.8em; font-weight:400;   margin:0 0 0.8em 0;}
+div.rtf h4{font-size:1.2em; line-height:1.8em; font-weight:400;   margin:0 0 0.8em 0;}
+div.rtf h5{font-size:1em;   line-height:1.8em; font-weight:900;   margin:0 0 0.8em 0;}
+div.rtf h6{font-size:1em;   line-height:1.8em; font-weight:900;   margin:0 0 0.8em 0;}
+
+div.rtf hr{width:30%; text-align:center; border:none; height:4px; background:#A21818; color:#A21818; margin:2.4em auto;}
+
+ul{margin:0 0 0.8em 0; font-size:1em;   line-height:1.8em; font-weight:400; list-style-type:disc;}
+ul li{margin:0 0 0 2em;}
+ol{margin:0 0 0.8em 0; font-size:1em;   line-height:1.8em; font-weight:400;  list-style-type:decimal;}
+ol li{margin:0 0 0 2em;}
 /*Global styles end*/
