@@ -47,8 +47,11 @@ table {
 	border-spacing: 0;
 }
 /*Global styles begin*/
-body{font-family: 'Lato', sans-serif; font-size:min(max(0.8em, 2vw), 1.2em);}
-div.rtf{max-width:75ch; margin:40px auto; }
+body{font-family: 'Lato', sans-serif; font-size:min(max(0.8em, 2vw), 1.2em);} /*min(max(minimum-value, responsive value), maximum value)*/
+/*Global styles end*/
+
+/*typography begin*/
+div.rtf{max-width:75ch; margin:auto;}
 div.rtf p {font-size:1em;   line-height:1.8em; font-weight:400; margin:0 0 1.4em 0; /*text-indent:3em;*/}
 div.rtf h1{font-size: 3em; font-style: normal; font-weight:300; line-height: 1.4em; margin:0 0 2.4em 0; text-align: center; text-transform:uppercase;}
 div.rtf h2{font-size:1.8em; line-height:1.8em; font-weight:300;  margin:0 0 2.4em 0; text-align: center; text-transform:uppercase;}
@@ -64,4 +67,14 @@ ul{margin:0 0 0.8em 0; font-size:1em;   line-height:1.8em; font-weight:400; list
 ul li{margin:0 0 0 2em;}
 ol{margin:0 0 0.8em 0; font-size:1em;   line-height:1.8em; font-weight:400;  list-style-type:decimal;}
 ol li{margin:0 0 0 2em;}
-/*Global styles end*/
+/*typography end*/
+
+/*layout begin*/
+div.mainframe{display:grid; grid-template-columns: 40px 1fr 1fr 1fr 1fr 40px;}
+div.frame{grid-column-start: 2; grid-column-end: 6;}
+div.grid4{display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap:40px;}
+div.full{grid-column-start: 1; grid-column-end: 7; padding:2vw;}
+img.lead-image{width:100%;}
+/*layout end*/
+div.box{min-height:200px; background:#ccc;}
+div.boc.col2{ grid-row-end: span 2;}
