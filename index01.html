@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Blocks</title>
+    <style>
+      body{margin:0; padding:0; background:#ccc;}
+      div.content{max-width:1200px; min-height:100vh; background:#fff; margin:0 auto; padding:2vh;}
+
+      div.block-1-4{display:grid; grid-template-columns:1fr 1fr; grid-gap:2vh}
+      @media only screen and (max-width: 800px) {
+         div.block-1-4{grid-template-columns:1fr; grid-template-rows:auto auto;}
+      }
+      div.subblock-4{display:grid; grid-template-columns:1fr 1fr; grid-gap:2vh}
+      @media only screen and (max-width: 500px) {
+        div.subblock-4{grid-template-columns:1fr; grid-gap:0;}
+      }
+      div.item{background:#fcc; min-height:200px; align-self: start;}
+      div.item.mid{margin:0 0 2vh 0;}
+
+      div.block-4{display:grid; grid-template-columns:1fr 1fr 1fr 1fr; grid-gap:2vh;}
+      @media only screen and (max-width: 800px) {
+        div.block-4{grid-template-columns:1fr 1fr; grid-row-gap:0;}
+      }
+      @media only screen and (max-width: 500px) {
+        div.block-4{grid-template-columns:1fr; grid-gap:0;}
+      }
+
+
+     div.main-block{max-height:100vh; display:grid; grid-template-columns: 1fr 1fr; grid-gap:2vh; background:#000; color:#eee;}
+     div.main-img img{width:100%; height:100vh; object-fit:contain;}
+     div.main-text{align-self: center; max-width: 65ch; }
+    </style>
+    <script>
+
+    </script>
+  </head>
+  <body>
+
+  <div class="wrapper">
+
+    <div class="main-block">
+      <div class="main-img">
+        <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/10/Mou-Aysha-portrait-photography-3.jpg">
+      </div>
+      <div class="main-text">
+        <h1>Are online portfolios with purposefully limited bodies of work a drain on society?</h1>
+        <h5>by John Doe</h5>
+      </div>
+    </div>
+
+    <div class="content">
+
+   <div class="block-4">
+     <div class="item mid">2</div>
+     <div class="item mid">2</div>
+     <div class="item mid">2</div>
+     <div class="item mid">2</div>
+   </div>
+
+    <div class="block-1-4">
+      <div class="item big">
+       <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/10/Mou-Aysha-portrait-photography-3.jpg" style="width:100%;">
+      </div>
+      <div class="subblock-4">
+        <div>
+          <div class="item mid" style="height:250px">1</div>
+          <div class="item mid">2</div>
+        </div>
+        <div>
+          <div class="item mid">3</div>
+          <div class="item mid" style="height:280px">4</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ </div>
+
+  </body>
+</html>
