@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Boxes</title>
+    <script src="res/jquery.js"></script>
+    <style>
+      body{margin:0; padding:0; background:#ccc;}
+
+      div.header-wrapper{position:fixed; top:0; left:0; right:0;}
+      div.header{background:rgba(255,255,255,0.5);  max-width:1200px; margin:0 auto;
+        display:grid; grid-template-columns:20% auto 20%;
+      }
+      a.logo{display:block; height:80px; background:url(res/logo.svg) no-repeat center center; background-size:150px; grid-column-start:2;}
+      a.logo span{display:none;}
+      a.search{display:block; background:url(res/search.svg) no-repeat center center; background-size:15%; grid-column-start:3;}
+      a.search span{display:none;}
+      a.menubutton{display:block; background:url(res/menu.svg) no-repeat center center; background-size:15%; grid-column-start:1; display:none}
+      a.menubutton span{display:none;}
+
+
+      div.menu{grid-column-start:2; grid-column-end: 3; text-align:center; text-transform:uppercase; border-top:1px solid #999;}
+      div.menu a{display:inline-block; padding:10px 20px; text-decoration:none;}
+      div.menu a:link{color:#333;}
+      div.menu a:visited{color:#333;}
+      div.menu a:hover{color:#f33;}
+
+      @media only screen and (max-width: 800px) {
+        div.menu{grid-column-start:auto; grid-column-end:auto; position:fixed; top:80px; left:0; right:0; bottom:0; background:rgba(0,0,0,0.8);
+        color:#fff; transition:all 0.5s;
+        }
+        div.menu a{display:block; padding:50px 20px; text-decoration:none; font-size:2em; border-bottom:1px solid #666;}
+        div.menu a:link{color:#eee;}
+        div.menu a:visited{color:#eee;}
+        div.menu a:hover{color:#f33;}
+        div.hidden{left:-100%; right:100%;}
+        a.menubutton{display:block;}
+      }
+
+      div.content{max-width:1200px; min-height:200vh; background:#fff; margin:0 auto; padding-top:150px;}
+
+
+
+
+
+    </style>
+    <script>
+function menu()
+{
+  $('.menu').toggleClass('hidden');
+}
+    </script>
+  </head>
+  <body>
+
+   <div class="header-wrapper">
+      <div class="header">
+        <a href="javascript:menu()" class="menubutton"><span>Menu</span></a>
+        <a href="#" class="logo"><span>My site</span></a>
+        <a href="#" class="search"><span>Search</span></a>
+
+        <div class="menu hidden">
+          <a href="#">Samurai</a>
+          <a href="#">Gardener</a>
+          <a href="#">War</a>
+          <a href="#">Garden</a>
+        </div>
+
+      </div>
+   </div>
+
+    <div class="content">
+
+
+      <p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p><p>Better be a samurai</p>
+
+    </div>
+
+  </body>
+</html>
