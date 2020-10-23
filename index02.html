@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Boxes</title>
+    <style>
+      body{margin:0; padding:0; background:#ccc;}
+      div.content{max-width:1200px; min-height:100vh; background:#fff; margin:0 auto; padding:2vh;}
+
+      div.block-1-4{display:grid; grid-template-columns:1fr 1fr; grid-gap:2vh}
+      @media only screen and (max-width: 800px) {
+         div.block-1-4{grid-template-columns:1fr; grid-template-rows:auto auto;}
+      }
+      div.subblock-4{display:grid; grid-template-columns:1fr 1fr; grid-gap:2vh}
+      @media only screen and (max-width: 500px) {
+        div.subblock-4{grid-template-columns:1fr; grid-gap:0;}
+      }
+
+
+      div.block-4{display:grid; grid-template-columns:1fr 1fr 1fr 1fr; grid-gap:2vh;}
+      @media only screen and (max-width: 800px) {
+        div.block-4{grid-template-columns:1fr 1fr; grid-row-gap:0;}
+      }
+      @media only screen and (max-width: 500px) {
+        div.block-4{grid-template-columns:1fr; grid-gap:0;}
+      }
+
+      div.item{background:#fcc; min-height:400px; position:relative;  align-self:start;}
+      div.item.mid{margin:0 0 2vh 0;}
+
+      div.box-image{position:absolute; top:0; left:0; right:0; bottom:0; background-repeat:no-repeat; background-size:cover; background-position:center center;}
+      div.box-text{position:absolute; top:70%; left:0; right:0; padding:30px; background:rgba(255,255,255,0.7); font-size:1.4em; height:100%; transition:all 0.5s;}
+      div.item:hover div.box-text{top:0;  background:#fff;}
+      div.box-text h4{margin-top:0;}
+
+      img.box2-image{width:100%;}
+      div.box2-text{ position:absolute; top:90%; left:20px; width:80%; background:#efe; padding:30px}
+      div.box-2text h4{margin-top:0;}
+
+
+    </style>
+    <script>
+
+    </script>
+  </head>
+  <body>
+
+  <div class="wrapper">
+
+
+    <div class="content">
+
+   <div class="block-4">
+     <div class="item mid">
+
+        <div class="box-image" style="background-image:url(https://mymodernmet.com/wp/wp-content/uploads/2018/10/Mou-Aysha-portrait-photography-3.jpg);"></div>
+        <div class="box-text">
+          <h4>Michael Jackson resurrected</h4>
+          <p>Ths star is back. He has his first live show soon.</p>
+        </div>
+
+     </div>
+     <div class="item mid">
+        <img class="box2-image" src="https://mymodernmet.com/wp/wp-content/uploads/2018/10/Mou-Aysha-portrait-photography-3.jpg" alt="Resurrection">
+        <div class="box2-text">
+          <h4>Michael Jackson resurrected</h4>
+          <p>Ths star is back. He has his first live show soon.</p>
+        </div>
+     </div>
+     <div class="item mid">2</div>
+     <div class="item mid">2</div>
+   </div>
+
+
+
+
+  </div>
+ </div>
+
+  </body>
+</html>
